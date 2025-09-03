@@ -1,0 +1,137 @@
+.comment {
+    max-width: 850px;
+    background-color: #f3f4f6;
+    border-radius: 16px;
+    padding: 30px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+    .currentUser {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    &Form {
+        display: flex;
+        gap: 15px;
+
+        .commentAction {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        .sendBtn {
+            position: absolute;
+            text-align: center;
+            bottom: 10px;
+            right: 7px;
+            background-color: #2563eb;
+            width: 31px;
+            height: 31px;
+            border: none;
+            cursor: pointer;
+
+            .btnSubmit {
+                position: absolute;
+                color: #fff;
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                background-color: #0847d0;
+            }
+
+            i {
+                color: #fff;
+                padding-top: 4px;
+                padding-right: 1px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            resize: none;
+            margin-top: 8px;
+        }
+    }
+
+    &Content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &List {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        .translate {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    }
+
+    &Item {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-top: 30px;
+
+        .title {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .email {
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        .body {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .time {
+            font-size: 11px;
+            padding-top: 4px;
+            opacity: 0.8;
+        }
+    }
+
+    &Footer {
+        display: flex;
+        gap: 15px;
+        font-size: 13px;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    .boxIcon {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+
+    .sendIcon {
+        color: #fff;
+    }
+}
+
+// Reset chung
+img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}

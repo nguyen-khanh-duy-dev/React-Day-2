@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+
+    a {
+        text-decoration: none;
+        padding: 6px 14px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 500;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        transition: background ease 0.5s;
+    }
+
+    a:hover {
+        background: linear-gradient(135deg, #3a8de0, #00cfcf);
+    }
+}
+
+.active {
+    color: green;
+}

@@ -1,0 +1,34 @@
+.card {
+    margin: 40px auto 0px;
+    width: 330px;
+    min-height: 400px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #e7e7e7;
+}
+
+.card .avatar {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 10px 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.info li {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    list-style-type: none;
+}

@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 40px auto 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #bdbdbd, #e0e0e0);
+
+    &.zero {
+        background: linear-gradient(135deg, #bdbdbd, #e0e0e0);
+    }
+
+    &.positive {
+        background: linear-gradient(135deg, #a5d6a7, #c8e6c9);
+    }
+
+    &.negative {
+        background: linear-gradient(135deg, #ef9a9a, #ffcdd2);
+    }
+}
+
+.countSection {
+    min-height: 250px;
+    margin: 0 auto;
+
+    h2 {
+        line-height: 250px;
+        font-size: 55px;
+        font-weight: 700;
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.status {
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: 600;
+}

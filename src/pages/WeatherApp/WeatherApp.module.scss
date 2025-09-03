@@ -1,0 +1,84 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: 40px auto 0;
+}
+
+.weatherCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weatherCard .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 25px;
+    align-items: center;
+}
+
+.weatherCard .city {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.weatherCard .location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.weatherCard .temp {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.weatherCard .status {
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.weatherCard .humidity {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.weatherCard .icon {
+    font-size: 60px;
+    padding: 0 20px;
+}
+
+.rightCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightCard button {
+    border: none;
+    background-color: inherit;
+    transform: rotate(0deg);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.rightCard button:hover .iconRefresh {
+    transform: rotate(180deg);
+}
+
+.rightCard .iconRefresh {
+    font-size: 18px;
+    color: #fff;
+}

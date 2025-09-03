@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.productCard {
+    width: 600px;
+    height: auto;
+    padding: 16px;
+    border-radius: 12px;
+    background: #cfd1da; /* màu mặc định */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+    .content {
+        padding: 12px 0;
+    }
+}
+
+/* Nền mờ phía sau modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* nền đen mờ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* nổi trên cùng */
+}
+
+/* Box modal */
+.boxModal {
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+    overflow: hidden;
+}
+
+/* Header modal */
+.boxModal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Nút đóng */
+.boxModal .header .icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.2s ease;
+}
+.boxModal .header .icon:hover {
+    color: red;
+}
+
+/* Nội dung */
+.boxModal .content {
+    padding: 16px;
+}
+.boxModal .content .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.boxModal .content .textContent {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Hiệu ứng fade */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
