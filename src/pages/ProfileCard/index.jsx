@@ -18,7 +18,7 @@ function ProfileCard() {
             {user ? (
                 <>
                     <img
-                        src="/bg-girl.png"
+                        src="bg-girl.png"
                         alt="Placeholder"
                         className={styles.avatar}
                     />
