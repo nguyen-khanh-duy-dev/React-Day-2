@@ -1,5 +1,3 @@
-@import "../../styles/variable";
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -7,12 +5,12 @@
     gap: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: $bg-app;
+    background-color: #e7e7e7;
     margin-top: 50px;
     width: 700px;
     text-align: center;
 }
 
 .customBtn {
-    background-color: orange ;
+    background-color: orange;
 }

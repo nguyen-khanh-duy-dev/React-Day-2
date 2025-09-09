@@ -27,6 +27,7 @@ function Buttons({
     const handleOnclick = (e) => {
         if (disabled || loading) {
             e.preventDefault()
+            e.stopPropagation()
             return
         }
         onClick(e)
@@ -40,10 +41,10 @@ function Buttons({
                 {...passProps}
                 disabled={disabled || loading}
                 onClick={handleOnclick}
-                className={clsx(classNames)}
+                className={classNames}
                 href={href}
             >
-                {children}
+                {loading ? <span>{children}</span> : children}
             </Component>
         </>
     )
@@ -55,7 +56,7 @@ Buttons.propTypes = {
     className: PropTypes.string,
     rounded: PropTypes.bool,
     size: PropTypes.string,
-    bordered: PropTypes.string,
+    bordered: PropTypes.bool,
     href: PropTypes.string,
     disabled: PropTypes.bool,
     loading: PropTypes.bool,
